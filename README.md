@@ -8,7 +8,12 @@ A stylish way to code! Optimized for React, Ember and Ruby development.
 1. [Install fonts](#install-fonts)
 2. [Configure Atom](#configure-atom)
 3. [Screenshots](#screenshots)
-
+  1. [JSX](#screenshot-jsx) 
+  2. [Ruby](#screenshot-ruby) 
+  3. [Ember](#screenshot-ember) 
+  4. [Handlebars](#screenshot-handlebars) 
+  5. [Elixir](#screenshot-elixir) 
+    
 ### <a name="install-fonts"></a> Install fonts
 
 Download and install [Fira Code](https://github.com/tonsky/FiraCode) font into your system. [Installation instructions](https://github.com/tonsky/FiraCode/wiki)
@@ -29,8 +34,22 @@ Every syntax theme is more or less aesthetically coupled with the UI theme. I re
 
 ### <a name="screenshots"></a> Screenshots
 
-JSX:
+#### <a name="screenshot-jsx"></a> JSX
 
-[]
+![Screenshot of JSX](img/JSX.png)
 
+#### <a name="screenshot-ruby"></a> Ruby
 
+![Screenshot of Ruby](img/ruby.png)
+
+#### <a name="screenshot-ember"></a> Ember
+
+![Screenshot of Ember](img/ember.png)
+
+#### <a name="screenshot-handlebars"></a> Handlebars
+
+![Screenshot of Handlebars](img/handlebars.png)
+
+#### <a name="screenshot-elixir"></a> Elixir
+
+![Screenshot of Elixir](img/elixir.png)
