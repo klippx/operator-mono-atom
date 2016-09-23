@@ -16,15 +16,12 @@ atom-text-editor::shadow {
 
   /*
     Transform selected text into flottflott for elegant touch:
-    - type function (?)
     - this
     - html attributes
   */
-  .type .function,
   .variable.language.this,
   .html > .entity.other.attribute-name,
-  .JSXAttrs > .entity.other.attribute-name,
-  .function.go {
+  .JSXAttrs > .entity.other.attribute-name {
     // flottflott is italic in itself, don't let atom make it italic
     font-style: normal !important;
     vertical-align: baseline;
