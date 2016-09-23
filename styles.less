@@ -1,0 +1,77 @@
+atom-text-editor {
+  font-family: 'Fira Code';
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+atom-text-editor::shadow {
+  /*
+    Turn off legibility in comments, regexp and quotes
+  */
+  .comment,
+  .string.quoted,
+  .string.regexp {
+    -webkit-font-feature-settings: "liga" off, "calt" off;
+  }
+
+  /*
+    Transform selected text into flottflott for elegant touch:
+    - type function (?)
+    - this
+    - html attributes
+  */
+  .type .function,
+  .variable.language.this,
+  .html > .entity.other.attribute-name,
+  .JSXAttrs > .entity.other.attribute-name {
+    // flottflott is italic in itself, don't let atom make it italic
+    font-style: normal !important;
+    vertical-align: baseline;
+    font-family: 'flottflott';
+    height: inherit;
+    font-size: 145%;
+    line-height: 100%;
+  }
+
+  /*
+    Replace function() with ƒ()
+    - not(.arrow) is for not touching the => () functions
+  */
+  .storage.type.function.js:not(.arrow) {
+    visibility: hidden;
+  }
+  .storage.type.function.js:not(.arrow)::after {
+    visibility: visible;
+    content: 'ƒ';
+    margin-left: -76px;
+  }
+
+  /*
+    Fix for Oceanic Next Italic for rendering full @ruby instance variables in expected color and a bit thicker
+    Also fixes es6 methods to not render in expected color
+  */
+  .entity.name.method.js,
+  .variable.other.readwrite.instance.ruby {
+    color: #6699CC;
+    // color: #268bd2;
+    // color: #5FB3B3;
+    font-weight: 500;
+  }
+
+  /*
+    Fix for Oceanic Next Italic for rendering the full CONSTANT variable in expected color
+  */
+  .variable.other.constant.ruby {
+    color: #FAC863;
+  }
+
+  /*
+    Make entity names bold, except mustache {{...}} operators in hbs files
+  */
+  .entity.name {
+    font-weight: bold;
+    &.mustache {
+      font-weight: normal;
+    }
+  }
+}
