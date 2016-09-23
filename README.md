@@ -7,7 +7,8 @@ A stylish way to code! Optimized for React, Ember and Ruby development.
 
 1. [Install fonts](#install-fonts)
 2. [Configure Atom](#configure-atom)
-3. [Screenshots](#screenshots)
+3. [Troubleshooting](#troubleshooting)
+4. [Screenshots](#screenshots)
   1. [JSX](#screenshot-jsx) 
   2. [Ruby](#screenshot-ruby) 
   3. [Ember](#screenshot-ember) 
@@ -31,6 +32,16 @@ The stylesheet has some custom overrides to complement a certain syntax theme. I
 Install and use this Syntax Theme: [Oceanic Next Italic](https://atom.io/themes/oceanic-next-italic) (by SintrumIT): `apm install oceanic-next-italic`
 
 Every syntax theme is more or less aesthetically coupled with the UI theme. I recommend using this UI theme [One Dark](https://atom.io/themes/one-dark-ui) (by Atom): https://atom.io/themes/one-dark-ui
+
+### <a name="troubleshooting"></a> Troubleshooting
+
+Are your ligatures not being applied correctly?
+
+1. In Editor Settings, you might need to enter "Fira Code" in "Font Family"
+2. In Editor Settings, be advised to have "Use Shadow DOM" turned on!
+3. Disable interfering packages that modifies fonts, such as "fonts"
+
+![Screenshot of JSX](img/fonts.png)
 
 ### <a name="screenshots"></a> Screenshots
 
