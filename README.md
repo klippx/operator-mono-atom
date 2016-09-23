@@ -3,6 +3,8 @@ Free [Operator Mono](http://www.typography.com/blog/introducing-operator) clone 
 
 A stylish way to code! Optimized for React, Ember and Ruby development.
 
+Check out the [screenshots](#screenshots).
+
 ## Installation
 
 1. [Install fonts](#install-fonts)
