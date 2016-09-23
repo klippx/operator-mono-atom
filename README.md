@@ -16,6 +16,7 @@ Check out the [screenshots](#screenshots).
   3. [Ember](#screenshot-ember) 
   4. [Handlebars](#screenshot-handlebars) 
   5. [Elixir](#screenshot-elixir) 
+  6. [Python](#screenshot-python) 
     
 ### <a name="install-fonts"></a> Install fonts
 
@@ -66,3 +67,7 @@ Are your ligatures not being applied correctly?
 #### <a name="screenshot-elixir"></a> Elixir
 
 ![Screenshot of Elixir](img/elixir.png)
+
+#### <a name="screenshot-python"></a> Python
+
+![Screenshot of Python](img/python.png)
