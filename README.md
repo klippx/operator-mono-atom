@@ -32,7 +32,19 @@ Once fonts are installed, bring up Atom and open up your stylesheet. Replace the
 
 The stylesheet has some custom overrides to complement a certain syntax theme. If you do not want to use this syntax theme please update `styles.less` to remove the custom overrides. The code comment should be enough to figure out which are needed...
 
-Install and use this Syntax Theme: [Oceanic Next Italic](https://atom.io/themes/oceanic-next-italic) (by SintrumIT): `apm install oceanic-next-italic`
+#### Syntax Theme
+
+Install and use this Syntax Theme: [Oceanic Next Italic](https://atom.io/themes/oceanic-next-italic)
+
+NOTE: There are deprecation issues in 1.13 and beyond which is not fixed in the base branch of Oceanic Next Italic, until they fix that a workaround is to use my fork:
+
+```
+cd ~/.atom/packages
+rm -rf oceanic-next-italic-atom/
+git clone git@github.com:klippx/oceanic-next-italic-atom.git --depth=1
+```
+
+#### UI Theme
 
 Every syntax theme is more or less aesthetically coupled with the UI theme. I recommend using this UI theme [One Dark](https://atom.io/themes/one-dark-ui) (by Atom): https://atom.io/themes/one-dark-ui
 
