@@ -28,9 +28,13 @@ The current version (June 2017) of the fonts can also be found in this repositor
 
 ### <a name="configure-atom"></a> Configure Atom
 
-Once fonts are installed, bring up Atom and open up your stylesheet. Merge or replace the contents with the one in this repository.
+Once fonts are installed, bring up Atom and go to Settings > Editor Settings. Change Font Family and Font Size as follows:
 
-The stylesheet has some custom overrides to complement a certain syntax theme. If you do not want to use this syntax theme please update `styles.less` to remove the custom overrides.
+![Screenshot of editor settings](img/atom_editor_settings.png)
+
+Next, open up your stylesheet. Merge or replace the contents with the one in this repository.
+
+The stylesheet has some custom overrides to complement a certain syntax theme. If you do not want to use this syntax theme please update `styles.less` to remove the offending custom override.
 
 #### Syntax Theme
 
