@@ -42,6 +42,10 @@ Every syntax theme is more or less aesthetically coupled with the UI theme. I re
 
 ### <a name="troubleshooting"></a> Troubleshooting
 
+Atom version
+
+The instructions / code works for current version of Atom (1.17.x) but should work for Atom v1.13 and higher if you are locked to a specific version of Atom for some obscure reason. If not, check out the appropriate tag and use that.
+
 Are your ligatures not being applied correctly?
 
 1. In Editor Settings, you might need to enter "Fira Code" in "Font Family"
