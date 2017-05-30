@@ -8,9 +8,9 @@ atom-text-editor.editor {
   /*
     Turn off legibility in comments, regexp and quotes
   */
-  .comment,
-  .string.quoted,
-  .string.regexp {
+  .syntax--comment,
+  .syntax--string.syntax--quoted,
+  .syntax--string.syntax--regexp {
     -webkit-font-feature-settings: "liga" off, "calt" off;
   }
 
@@ -19,9 +19,9 @@ atom-text-editor.editor {
     - this
     - html attributes
   */
-  .variable.language.this,
-  .html > .entity.other.attribute-name,
-  .JSXAttrs > .entity.other.attribute-name {
+  .syntax--variable.syntax--language.syntax--this,
+  .syntax--html > .syntax--attribute-name,
+  .syntax--JSXAttrs > .syntax--attribute-name {
     // flottflott is italic in itself, don't let atom make it italic
     font-style: normal !important;
     vertical-align: baseline;
@@ -35,10 +35,10 @@ atom-text-editor.editor {
     Replace function() with ƒ()
     - not(.arrow) is for not touching the => () functions
   */
-  .storage.type.function.js:not(.arrow) {
+  .syntax--storage.syntax--type.syntax--function.syntax--js:not(.syntax--arrow) {
     visibility: hidden;
   }
-  .storage.type.function.js:not(.arrow)::after {
+  .syntax--storage.syntax--type.syntax--function.syntax--js:not(.syntax--arrow)::after {
     visibility: visible;
     content: 'ƒ';
     margin-left: -76px;
@@ -46,29 +46,27 @@ atom-text-editor.editor {
 
   /*
     Fix for Oceanic Next Italic for rendering full @ruby instance variables in expected color and a bit thicker
-    Also fixes es6 methods to not render in expected color
+    Fix for Oceanic Next Italic for rendering the es6 methods in expected color
   */
-  .entity.name.method.js,
-  .variable.other.readwrite.instance.ruby {
+  .syntax--entity.syntax--name.syntax--method.syntax--js,
+  .syntax--variable.syntax--other.syntax--readwrite.syntax--instance.syntax--ruby {
     color: #6699CC;
-    // color: #268bd2;
-    // color: #5FB3B3;
     font-weight: 500;
   }
 
   /*
     Fix for Oceanic Next Italic for rendering the full CONSTANT variable in expected color
   */
-  .variable.other.constant.ruby {
+  .syntax--variable.syntax--other.syntax--constant.syntax--ruby {
     color: #FAC863;
   }
 
   /*
-    Make entity names bold, except mustache {{...}} operators in hbs files
+    Fix for Oceanic Next Italic for rendering the mustache {{...}} operators in hbs files
   */
-  .entity.name {
+  .syntax--entity.syntax--name {
     font-weight: bold;
-    &.mustache {
+    &.syntax--mustache {
       font-weight: normal;
     }
   }
