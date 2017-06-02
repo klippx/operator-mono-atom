@@ -38,7 +38,9 @@ The stylesheet has some custom overrides to complement a certain syntax theme. I
 
 #### Syntax Theme
 
-Install and use this Syntax Theme: [Oceanic Next Italic](https://atom.io/themes/oceanic-next-italic)
+A custom Syntax Theme has been built to support this repo: [Operator Mono](https://atom.io/themes/operator-mono)
+
+It is built from scratch using the Oceanic Next Italic palette.
 
 #### UI Theme
 
@@ -58,6 +60,8 @@ Are your ligatures not being applied correctly?
 ![Screenshot of JSX](img/fonts.png)
 
 ### <a name="screenshots"></a> Screenshots
+
+The screenshots below are taken with theme Oceanic Next Italic.
 
 #### <a name="screenshot-jsx"></a> JSX
 
