@@ -28,23 +28,55 @@ The current version (June 2017) of the fonts can also be found in this repositor
 
 ### <a name="configure-atom"></a> Configure Atom
 
-Once fonts are installed, bring up Atom and go to Settings > Editor Settings. Change Font Family and Font Size as follows:
+#### Ligatures
 
-![Screenshot of editor settings](img/atom_editor_settings.png)
+To use Fira Code properly you need to enable ligatures. There are two ways to do this, see below:
 
-Next, open up your stylesheet. Merge or replace the contents with the one in this repository.
+##### Quick install
 
-The stylesheet has some custom overrides to complement a certain syntax theme. If you do not want to use this syntax theme please update `styles.less` to remove the offending custom override.
+Bring up Atom and go to Settings > Themes. Search for [Operator Mono](https://atom.io/themes/operator-mono) and install.
 
-#### Syntax Theme
+This syntax theme has been built to support this Fira Code, it is built from scratch using the Oceanic Next Italic palette and it will enable ligatures, and make certain attributes italic.
 
-A custom Syntax Theme has been built to support this repo: [Operator Mono](https://atom.io/themes/operator-mono)
+#### Manual install
 
-It is built from scratch using the Oceanic Next Italic palette.
+If you prefer to use your own syntax theme, you have to edit your styles.less and insert these lines:
 
-#### UI Theme
+```
+atom-text-editor {
+  text-rendering: optimizeLegibility;
 
-Every syntax theme is more or less aesthetically coupled with the UI theme. I recommend using this UI theme [One Dark](https://atom.io/themes/one-dark-ui) (by Atom): https://atom.io/themes/one-dark-ui
+  &.editor .syntax--string.syntax--quoted,
+  &.editor .syntax--string.syntax--regexp {
+    -webkit-font-feature-settings: "liga" off, "calt" off;
+  }
+}
+```
+
+#### Enable flottflott font
+
+In order to enable the flottflott font, you have to manually edit your styles.less file and insert these lines:
+
+```
+atom-text-editor.editor {
+  /*
+    Transform certain attributes into flottflott:
+    - this
+    - html attributes
+  */
+  .syntax--variable.syntax--language.syntax--this,
+  .syntax--html > .syntax--attribute-name,
+  .syntax--JSXAttrs > .syntax--attribute-name {
+    // flottflott is italic in itself, don't let atom make it italic
+    font-style: normal !important;
+    vertical-align: baseline;
+    font-family: 'flottflott';
+    height: inherit;
+    font-size: 145%
+    line-height: 100%;
+  }
+}
+```
 
 ### <a name="troubleshooting"></a> Troubleshooting
 

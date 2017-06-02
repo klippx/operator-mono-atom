@@ -1,73 +1,16 @@
-atom-text-editor {
-  font-family: 'Fira Code';
-  font-style: normal;
-  text-rendering: optimizeLegibility;
-}
-
 atom-text-editor.editor {
   /*
-    Turn off legibility in comments, regexp and quotes
-  */
-  .syntax--comment,
-  .syntax--string.syntax--quoted,
-  .syntax--string.syntax--regexp {
-    -webkit-font-feature-settings: "liga" off, "calt" off;
-  }
-
-  /*
-    Transform selected text into flottflott for elegant touch:
+    Transform selected text into Space Mono for elegant touch:
     - this
     - html attributes
   */
   .syntax--variable.syntax--language.syntax--this,
   .syntax--html > .syntax--attribute-name,
   .syntax--JSXAttrs > .syntax--attribute-name {
-    // flottflott is italic in itself, don't let atom make it italic
-    font-style: normal !important;
     vertical-align: baseline;
-    font-family: 'flottflott';
+    font-family: 'Space Mono';
+    font-size: 99%;
     height: inherit;
-    font-size: 145%;
     line-height: 100%;
-  }
-
-  /*
-    Replace function() with ƒ()
-    - not(.arrow) is for not touching the => () functions
-  */
-  .syntax--storage.syntax--type.syntax--function.syntax--js:not(.syntax--arrow) {
-    visibility: hidden;
-  }
-  .syntax--storage.syntax--type.syntax--function.syntax--js:not(.syntax--arrow)::after {
-    visibility: visible;
-    content: 'ƒ';
-    margin-left: -76px;
-  }
-
-  /*
-    Fix for Oceanic Next Italic for rendering full @ruby instance variables in expected color and a bit thicker
-    Fix for Oceanic Next Italic for rendering the es6 methods in expected color
-  */
-  .syntax--entity.syntax--name.syntax--method.syntax--js,
-  .syntax--variable.syntax--other.syntax--readwrite.syntax--instance.syntax--ruby {
-    color: #6699CC;
-    font-weight: 500;
-  }
-
-  /*
-    Fix for Oceanic Next Italic for rendering the full CONSTANT variable in expected color
-  */
-  .syntax--variable.syntax--other.syntax--constant.syntax--ruby {
-    color: #FAC863;
-  }
-
-  /*
-    Fix for Oceanic Next Italic for rendering the mustache {{...}} operators in hbs files
-  */
-  .syntax--entity.syntax--name {
-    font-weight: bold;
-    &.syntax--mustache {
-      font-weight: normal;
-    }
   }
 }
