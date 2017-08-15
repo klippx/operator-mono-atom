@@ -72,7 +72,7 @@ atom-text-editor.editor {
     vertical-align: baseline;
     font-family: 'flottflott';
     height: inherit;
-    font-size: 145%
+    font-size: 145%;
     line-height: 100%;
   }
 }
