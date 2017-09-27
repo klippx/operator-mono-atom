@@ -36,7 +36,7 @@ Bring up Atom and go to Settings > Themes. Search for [Operator Mono](https://at
 
 This syntax theme has been built to support this Fira Code, it is built from scratch using the Oceanic Next Italic palette and it will enable ligatures, and make certain attributes italic. It will also be your theme.
 
-#### Ligatures - Manual install
+##### Ligatures - Manual install
 
 If you prefer to use your own syntax theme, you have to edit your styles.less and insert these lines:
 
