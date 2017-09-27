@@ -1,15 +1,23 @@
 atom-text-editor.editor {
   /*
-    Transform selected text into Space Mono for elegant touch:
+    Transform selected text into alternative font for elegant touch:
     - this
-    - html attributes
+    - HTML and JSX attributes
+    - JS functions (except arrow function)
+    - JS undefined
+    - JS return/const/let
+    - comments
   */
   .syntax--variable.syntax--language.syntax--this,
   .syntax--html > .syntax--attribute-name,
-  .syntax--JSXAttrs > .syntax--attribute-name {
+  .syntax--JSXAttrs > .syntax--attribute-name,
+  .syntax--storage.syntax--type.syntax--js:not(.syntax--function):not(.syntax--arrow),
+  .syntax--constant.syntax--language.syntax--undefined.syntax--js,
+  .syntax--keyword.syntax--control.syntax--flow.syntax--js,
+  .syntax--comment {
     vertical-align: baseline;
-    font-family: 'Space Mono';
-    font-size: 99%;
+    font-family: 'Script12 BT';
+    font-size: 120%;
     height: inherit;
     line-height: 100%;
   }

@@ -8,23 +8,21 @@ Check out the [screenshots](#screenshots).
 ## Installation
 
 1. [Install fonts](#install-fonts)
-2. [Configure Atom](#configure-atom)
-3. [Troubleshooting](#troubleshooting)
-4. [Screenshots](#screenshots)
+1. [Configure Atom](#configure-atom)
+1. [Troubleshooting](#troubleshooting)
+1. [Screenshots](#screenshots)
   1. [JSX](#screenshot-jsx)
-  2. [Ruby](#screenshot-ruby)
-  3. [Ember](#screenshot-ember)
-  4. [Handlebars](#screenshot-handlebars)
-  5. [Elixir](#screenshot-elixir)
-  6. [Python](#screenshot-python)
+  1. [Ruby](#screenshot-ruby)
+  1. [Elixir](#screenshot-elixir)
+  1. [Python](#screenshot-python)
 
 ### <a name="install-fonts"></a> Install fonts
 
 Download and install [Fira Code](https://github.com/tonsky/FiraCode) font into your system. [Installation instructions](https://github.com/tonsky/FiraCode/wiki)
 
-Download and install [flottflott](http://www.dafont.com/flottflott.font) font into your system in the same manner.
+Download and install [Script12 BT](https://www.myfontsfree.com/134618/script12pitchbt.htm) font into your system in the same manner. Thanks to @kencrocken for finding this font :)
 
-The current version (June 2017) of the fonts can also be found in this repository.
+The current version (last checked September 2017) of the fonts can also be found in this repository.
 
 ### <a name="configure-atom"></a> Configure Atom
 
@@ -53,47 +51,26 @@ atom-text-editor {
 }
 ```
 
-#### Enable flottflott font
+#### Enable italic font
 
-In order to enable the flottflott font, you have to manually edit your styles.less file and insert these lines:
-
-```
-atom-text-editor.editor {
-  /*
-    Transform certain attributes into flottflott:
-    - this
-    - html attributes
-  */
-  .syntax--variable.syntax--language.syntax--this,
-  .syntax--html > .syntax--attribute-name,
-  .syntax--JSXAttrs > .syntax--attribute-name {
-    // flottflott is italic in itself, don't let atom make it italic
-    font-style: normal !important;
-    vertical-align: baseline;
-    font-family: 'flottflott';
-    height: inherit;
-    font-size: 145%;
-    line-height: 100%;
-  }
-}
-```
+In order to enable the alternative font for italic, you have to manually edit your styles.less file and merge the code snippet found in `styles.less` in this repository with your own.
 
 ### <a name="troubleshooting"></a> Troubleshooting
 
 Atom version
 
-The instructions / code works for current version of Atom (1.17.x) but should work for Atom v1.13 and higher if you are locked to a specific version of Atom for some obscure reason. If not, check out the appropriate tag and use that.
+The instructions / code works for the latest versions of Atom (1.20.x) and Atom Beta (1.21.x). Please make sure your editor is updated.
 
 Are your ligatures not being applied correctly?
 
 1. In Editor Settings, you might need to enter "Fira Code" in "Font Family"
-1. Disable interfering packages that modifies fonts, such as "fonts"
+1. Hunt down and disable interfering packages that modifies fonts, such as "fonts"
 
-![Screenshot of JSX](img/fonts.png)
+![Screenshot of example bad package fonts](img/fonts.png)
 
 ### <a name="screenshots"></a> Screenshots
 
-The screenshots below are taken with theme Oceanic Next Italic.
+The screenshots below are taken with the [Operator Mono](https://github.com/klippx/operator-mono) theme.
 
 #### <a name="screenshot-jsx"></a> JSX
 
@@ -103,18 +80,6 @@ The screenshots below are taken with theme Oceanic Next Italic.
 
 ![Screenshot of Ruby](img/ruby.png)
 
-#### <a name="screenshot-ember"></a> Ember
-
-![Screenshot of Ember](img/ember.png)
-
-#### <a name="screenshot-handlebars"></a> Handlebars
-
-![Screenshot of Handlebars](img/handlebars.png)
-
 #### <a name="screenshot-elixir"></a> Elixir
 
 ![Screenshot of Elixir](img/elixir.png)
-
-#### <a name="screenshot-python"></a> Python
-
-![Screenshot of Python](img/python.png)
