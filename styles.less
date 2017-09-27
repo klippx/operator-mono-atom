@@ -6,7 +6,7 @@ atom-text-editor.editor {
     - JS functions (except arrow function)
     - JS undefined
     - JS return/const/let
-    - comments
+    - EX constants
   */
   .syntax--variable.syntax--language.syntax--this,
   .syntax--html > .syntax--attribute-name,
@@ -14,7 +14,8 @@ atom-text-editor.editor {
   .syntax--storage.syntax--type.syntax--js:not(.syntax--function):not(.syntax--arrow),
   .syntax--constant.syntax--language.syntax--undefined.syntax--js,
   .syntax--keyword.syntax--control.syntax--flow.syntax--js,
-  .syntax--comment {
+  .syntax--variable.syntax--other.syntax--constant.syntax--elixir,
+  .syntax--constant.syntax--language.syntax--elixir {
     vertical-align: baseline;
     font-family: 'Script12 BT';
     font-size: 120%;

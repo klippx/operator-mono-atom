@@ -26,17 +26,17 @@ The current version (last checked September 2017) of the fonts can also be found
 
 ### <a name="configure-atom"></a> Configure Atom
 
-#### Ligatures
+#### Enable Ligatures
 
 To use Fira Code properly you need to enable ligatures. There are two ways to do this, see below:
 
-##### Quick install
+##### Ligatures - Quick install
 
 Bring up Atom and go to Settings > Themes. Search for [Operator Mono](https://atom.io/themes/operator-mono) and install.
 
-This syntax theme has been built to support this Fira Code, it is built from scratch using the Oceanic Next Italic palette and it will enable ligatures, and make certain attributes italic.
+This syntax theme has been built to support this Fira Code, it is built from scratch using the Oceanic Next Italic palette and it will enable ligatures, and make certain attributes italic. It will also be your theme.
 
-#### Manual install
+#### Ligatures - Manual install
 
 If you prefer to use your own syntax theme, you have to edit your styles.less and insert these lines:
 
@@ -51,9 +51,11 @@ atom-text-editor {
 }
 ```
 
-#### Enable italic font
+#### Enable "Operator Mono" font
 
-In order to enable the alternative font for italic, you have to manually edit your styles.less file and merge the code snippet found in `styles.less` in this repository with your own.
+In order to enable the alternative font for italic, which is probably what you came for, you have to manually edit your styles.less file and merge the code snippet found in `styles.less` in this repository with your own.
+
+If you have any personal preferences, such as applying "Operator Mono" for comments as well, just add `.syntax--comment` in the css selector list.
 
 ### <a name="troubleshooting"></a> Troubleshooting
 
