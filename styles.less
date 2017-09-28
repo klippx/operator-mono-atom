@@ -5,20 +5,26 @@ atom-text-editor.editor {
     - HTML and JSX attributes
     - JS functions (except arrow function)
     - JS undefined
-    - JS return/const/let
+    - JS storage (const/let/async)
     - EX constants
+    - Ruby (nil/self/block)
+    - Ruby hash keys
   */
   .syntax--variable.syntax--language.syntax--this,
   .syntax--html > .syntax--attribute-name,
   .syntax--JSXAttrs > .syntax--attribute-name,
   .syntax--storage.syntax--type.syntax--js:not(.syntax--function):not(.syntax--arrow),
   .syntax--constant.syntax--language.syntax--undefined.syntax--js,
-  .syntax--keyword.syntax--control.syntax--flow.syntax--js,
   .syntax--variable.syntax--other.syntax--constant.syntax--elixir,
-  .syntax--constant.syntax--language.syntax--elixir {
+  .syntax--constant.syntax--language.syntax--elixir,
+  .syntax--constant.syntax--language.syntax--nil.syntax--ruby,
+  .syntax--variable.syntax--language.syntax--self.syntax--ruby,
+  .syntax--constant.syntax--other.syntax--symbol.syntax--hashkey.syntax--ruby,
+  .syntax--variable.syntax--other.syntax--block.syntax--ruby {
     vertical-align: baseline;
     font-family: 'Script12 BT';
     font-size: 120%;
+    font-style: normal;
     height: inherit;
     line-height: 100%;
   }
