@@ -15,6 +15,7 @@ atom-text-editor.editor {
   .syntax--JSXAttrs > .syntax--attribute-name,
   .syntax--storage.syntax--type.syntax--js:not(.syntax--function):not(.syntax--arrow),
   .syntax--constant.syntax--language.syntax--undefined.syntax--js,
+  .syntax--constant.syntax--other.syntax--object.syntax--key.syntax--js,
   .syntax--variable.syntax--other.syntax--constant.syntax--elixir,
   .syntax--constant.syntax--language.syntax--elixir,
   .syntax--constant.syntax--language.syntax--nil.syntax--ruby,
@@ -24,7 +25,7 @@ atom-text-editor.editor {
     vertical-align: baseline;
     font-family: 'Script12 BT';
     font-size: 120%;
-    font-style: normal;
+    font-style: normal !important;
     height: inherit;
     line-height: 100%;
   }

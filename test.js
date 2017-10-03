@@ -1,0 +1,4 @@
+const bogus = {
+  abfdefghijklmnopqrstuvwxyzABFDEFGHIJKLMNOPQRSTUVWXYZabfdefghijklmnopqrstuvwxyz: 'ABFDEFGHIJKLMNOPQRSTUVWXYZ',
+  abfdefghijklmnopqrstuvwxyz: 'ABFDEFGHIJKLMNOPQRSTUVWXYZabfdefghijklmnopqrstuvwxyzABFDEFGHIJKLMNOPQRSTUVWXYZ',
+}
